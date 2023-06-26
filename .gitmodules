@@ -13,3 +13,6 @@
 [submodule "lib/StringUtils"]
 	path = lib/StringUtils
 	url = https://github.com/zac-williamson/StringUtils
+[submodule "lib/connect4-sol"]
+	path = lib/connect4-sol
+	url = https://github.com/m1guelpf/connect4-sol
