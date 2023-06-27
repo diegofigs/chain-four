@@ -29,6 +29,8 @@ jobs:
         id: build
 
       - name: Run Forge tests
+        env:
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
         run: |
           forge test -vvv
         id: test
