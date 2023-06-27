@@ -24,6 +24,7 @@ jobs:
         uses: crytic/slither-action@v0.3.0
         id: slither
         with:
+          ignore-compile: true
           target: ./src
           sarif: results.sarif
           fail-on: none
