@@ -27,4 +27,6 @@ jobs:
           version: nightly
 
       - name: Run coverage
+        env:
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
         run: NO_COLOR=1 forge coverage >> $GITHUB_STEP_SUMMARY

@@ -36,4 +36,6 @@ jobs:
         id: test
 
       - name: Run snapshot
-        run: NO_COLOR=1 forge snapshot >> $GITHUB_STEP_SUMMARY
+        env:
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+        run: NO_COLOR=1 forge snapshot --diff >> $GITHUB_STEP_SUMMARY
