@@ -6,17 +6,24 @@ on:
   pull_request:
     branches: [ main ]
 
+env:
+  FOUNDRY_PROFILE: ci
+
 jobs:
   analyze:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
     steps:
       - uses: actions/checkout@v3
+        with:
+          submodules: recursive
 
       - name: Run Slither
         uses: crytic/slither-action@v0.3.0
         id: slither
         with:
-          target: 'src/'
           sarif: results.sarif
           fail-on: none
 
