@@ -2,5 +2,19 @@
 src = "src"
 out = "out"
 libs = ["lib"]
+optimizer = true
+optimizer_runs = 20_000
 
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
+gas_reports = ["ConnectFourMatchMakerV1"]
+
+[profile.default.model_checker]
+contracts = {'./src/ConnectFourMatchMakerV1.sol' = ['ConnectFourMatchMakerV1']}
+engine = 'chc'
+timeout = 10000
+targets = ['assert', 'constantCondition', 'underflow']
+invariants = ['contract', 'reentrancy']
+show_unproved = true
+
+[profile.ci]
+verbosity = 4
