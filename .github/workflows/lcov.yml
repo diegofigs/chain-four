@@ -26,5 +26,5 @@ jobs:
         with:
           version: nightly
 
-      - name: Run snapshot
+      - name: Run coverage
         run: NO_COLOR=1 forge coverage >> $GITHUB_STEP_SUMMARY
