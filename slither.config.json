@@ -1,0 +1,12 @@
+{
+  "filter_paths": "lib",
+  "solc_remaps": [
+    "ds-test/=lib/ds-test/src/",
+    "forge-std/=lib/forge-std/src/",
+    "solmate/=lib/solmate/src/",
+    "@openzeppelin/=lib/openzeppelin-contracts/contracts/",
+    "StringUtils/=lib/StringUtils/",
+    "base64/=lib/base64/",
+    "connect4-sol/=lib/connect4-sol/src/"
+  ]
+}
