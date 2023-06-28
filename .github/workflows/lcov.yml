@@ -13,6 +13,8 @@ jobs:
   check:
     strategy:
       fail-fast: true
+    permissions:
+      pull-requests: write
 
     name: Foundry project
     runs-on: ubuntu-latest
