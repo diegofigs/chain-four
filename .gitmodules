@@ -1,0 +1,18 @@
+[submodule "lib/forge-std"]
+	path = lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "lib/openzeppelin-contracts"]
+	path = lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "lib/solmate"]
+	path = lib/solmate
+	url = https://github.com/rari-capital/solmate
+[submodule "lib/base64"]
+	path = lib/base64
+	url = https://github.com/Brechtpd/base64
+[submodule "lib/StringUtils"]
+	path = lib/StringUtils
+	url = https://github.com/zac-williamson/StringUtils
+[submodule "lib/connect4-sol"]
+	path = lib/connect4-sol
+	url = https://github.com/m1guelpf/connect4-sol
